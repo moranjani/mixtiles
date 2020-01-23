@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="tile_padding_default">20dp</dimen>
+    <dimen name="tile_bottom_padding">25dp</dimen>
+</resources>

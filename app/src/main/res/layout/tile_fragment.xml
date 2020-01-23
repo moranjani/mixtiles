@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="vm"
+            type="com.mixtiles.TileViewModel" />
+
+        <variable
+            name="clickCallback"
+            type="com.mixtiles.UserClickListener" />
+    </data>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black"
+            android:padding="@dimen/tile_padding_default"
+            android:paddingBottom="@dimen/tile_bottom_padding"
+            android:paddingEnd="@dimen/tile_bottom_padding"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="@{clickCallback::onTileClicked}" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>
